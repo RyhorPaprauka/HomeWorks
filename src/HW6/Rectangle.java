@@ -11,7 +11,8 @@ public class Rectangle {
     }
 
     public double Square() {
-        return (leftTop.getY() - rightBottom.getY()) * (rightBottom.getX() - leftTop.getX());
+        Point leftBottom = new Point(leftTop.getX(), rightBottom.getY());
+        return (leftTop.distance(leftBottom) * leftBottom.distance(rightBottom));
     }
 
     public double diagonalLength() {

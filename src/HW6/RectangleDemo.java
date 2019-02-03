@@ -3,8 +3,8 @@ package HW6;
 public class RectangleDemo {
 
     public static void main(String[] args) {
-        Point leftTop = new Point(-4, 3);
-        Point rightBottom = new Point(6, -2);
+        Point leftTop = new Point(-4, 2);
+        Point rightBottom = new Point(3, -1);
         Rectangle rectangle = new Rectangle(leftTop, rightBottom);
         Rectangle rectangle12 = new Rectangle(new Point(-1, 1), new Point(5, -3));
 
